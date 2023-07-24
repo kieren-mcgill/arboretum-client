@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e752a6ce-0501-44d5-a57b-2b624fa6fba1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/_redirects" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +105,7 @@
       <workItem from="1689759420036" duration="503000" />
       <workItem from="1689765220401" duration="548000" />
       <workItem from="1690208605878" duration="1265000" />
-      <workItem from="1690210831216" duration="627000" />
+      <workItem from="1690210831216" duration="2013000" />
     </task>
     <task id="LOCAL-00001" summary="Merged visitor-view and main">
       <created>1687255016459</created>
