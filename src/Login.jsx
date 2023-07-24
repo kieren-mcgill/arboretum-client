@@ -31,8 +31,8 @@ const Login = () => {
             .required('Please enter your username'),
           password: Yup.string()
             .required('Please enter your password')
-            // .min(8, "Password must be at least 8 characters")
-            // .matches(/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).*/, "Password must contain at least 1 uppercase letter and 1 number"),
+            .min(8, "Password must be at least 8 characters")
+            .matches(/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).*/, "Password must contain at least 1 uppercase letter and 1 number"),
         })}
         onSubmit={(values, { setSubmitting, resetForm }) => {
           setError(undefined);
