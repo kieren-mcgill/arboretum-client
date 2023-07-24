@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e752a6ce-0501-44d5-a57b-2b624fa6fba1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/cypress/e2e/editSigns.cy.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/e2e/getSign.cy.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/e2e/getSign.cy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +29,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/eyupstudent/yorks-arb-client/cypress/fixtures&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -57,7 +57,6 @@
   <component name="RunManager" selected="Jest.login admin.Shows the login page">
     <configuration name="login admin" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
-      <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
@@ -70,7 +69,6 @@
     </configuration>
     <configuration name="login admin.Shows the login page" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
-      <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
@@ -92,7 +90,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f3650ec4-1e00-49ee-89c4-dc8b2be9fdd5" name="Changes" comment="Merged visitor-view and main" />
+      <changelist id="e752a6ce-0501-44d5-a57b-2b624fa6fba1" name="Changes" comment="" />
       <created>1686736384348</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -104,6 +102,9 @@
       <workItem from="1687172724601" duration="9115000" />
       <workItem from="1687249269145" duration="4370000" />
       <workItem from="1687420555636" duration="2859000" />
+      <workItem from="1689611953521" duration="3037000" />
+      <workItem from="1689759420036" duration="503000" />
+      <workItem from="1689765220401" duration="548000" />
     </task>
     <task id="LOCAL-00001" summary="Merged visitor-view and main">
       <created>1687255016459</created>

@@ -8,14 +8,11 @@ import App from "./App";
 import AppContext from "./context";
 
 const AxiosClient = () => {
-  const baseUrl =
-    !process.env.NODE_ENV || process.env.NODE_ENV === "development"
-      ? "http://localhost:8080/api"
-      : "";
+  const baseUrl = process.env.REACT_APP_BASE_URL
 
-  const storeToken = localStorage.getItem('token')
+  const storeToken = localStorage.getItem('token');
   const [token, setToken] = useState(storeToken);
-  const storeUser = localStorage.getItem('user')
+  const storeUser = localStorage.getItem('user');
   const [user, setUser] = useState(storeUser);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [sign, setSign] = useState(undefined);
