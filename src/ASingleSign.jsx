@@ -1,4 +1,4 @@
-import { Box, Grid, Modal, useMediaQuery, useTheme } from "@mui/material";
+import { Box, Grid, Modal, useTheme } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import * as React from "react";
@@ -9,7 +9,6 @@ import { useNavigate } from "react-router-dom";
 const ASingleSign = ({ sign }) => {
 
   const theme = useTheme();
-  const isDesktop = useMediaQuery(theme.breakpoints.up('sm'));
   const { client } = useContext(AppContext);
   const [open, setOpen] = useState(false);
 
@@ -29,7 +28,6 @@ const ASingleSign = ({ sign }) => {
     left: '50%',
     transform: 'translate(-50%, -50%)',
     width: 400,
-    bgcolor: 'background.paper',
     border: '1px solid #000',
     boxShadow: 24,
     p: 4,
@@ -37,7 +35,7 @@ const ASingleSign = ({ sign }) => {
 
   return (
     <>
-      <Grid flexDirection={isDesktop ? "row" : "column"} wrap="nowrap" justifyContent="space-between" container
+      <Grid flexDirection="row" wrap="nowrap" justifyContent="space-between" container
             sx={{ backgroundColor: '#F4F2EC' }} m={2} p={2}>
 
         <Grid item xs={12} sm={10}>
@@ -45,20 +43,20 @@ const ASingleSign = ({ sign }) => {
             {`${sign.title}`}
           </Typography>
           <Typography mb={1} color="text.secondary"  sx={{ overflow: "hidden", textOverflow: "ellipsis", display: "-webkit-box", WebkitLineClamp: "4", WebkitBoxOrient: "vertical", }}>
-            {`${sign.description}`}
+            {`${sign.description.slice(0, 100)}...`}
           </Typography>
         </Grid>
 
         <Grid item>
-          <Grid container alignItems={isDesktop ? "flex-end" : "center"} spacing={1} flexDirection='column'>
+          <Grid container alignItems="flex-end" spacing={1} flexDirection='column'>
             <Grid item>
-              <Button size="small" variant='contained' onClick={() => navigate(`/edit-sign/${sign.id}`)} data-cy={`edit-sign-${sign.id}`}>Edit</Button>
+              <Button sx={{width: '80px'}} size="small" variant='contained' onClick={() => navigate(`/edit-sign/${sign.id}`)} data-cy={`edit-sign-${sign.id}`}>Edit</Button>
             </Grid>
             <Grid item>
-              <Button size="small" variant='contained' onClick={handleOpen} data-cy={`delete-sign-${sign.id}`}>Delete</Button>
+              <Button sx={{width: '80px'}} size="small" variant='contained' onClick={handleOpen} data-cy={`delete-sign-${sign.id}`}>Delete</Button>
             </Grid>
             <Grid item>
-              <Button size="small" variant='contained' onClick={() => navigate(`/view-qr/${sign.id}`)} data-cy={`view-code-${sign.id}`}>View QR Code</Button>
+              <Button sx={{width: '80px'}} size="small" variant='contained' onClick={() => navigate(`/view-qr/${sign.id}`)} data-cy={`view-code-${sign.id}`}>QR Code</Button>
             </Grid>
             <Modal
               open={open}

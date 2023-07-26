@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from 'react';
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 import { isEmpty } from 'lodash';
 import { Alert, Typography } from '@mui/material';
@@ -24,8 +24,6 @@ const EditSign = () => {
       })
   }, [])
 
-  const navigate = useNavigate();
-
   if (error) {
     return (
       <Alert severity="error">{error}</Alert>
@@ -37,7 +35,6 @@ const EditSign = () => {
       <Typography>Loading sign</Typography>
     );
   }
-
   return (
     <SignForm sign={sign} />
   );

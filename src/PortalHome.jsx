@@ -1,5 +1,4 @@
 import { Typography } from "@mui/material";
-import ViewSigns from "./ViewSigns";
 
 const PortalHome = () => {
 
@@ -40,7 +39,7 @@ const PortalHome = () => {
       </ Typography>
 
       <Typography m={1} marginBottom={2}>
-        To view or edit an existing sign, click on <b>EDIT SIGN</b> in the drop-down menu.
+        To view or edit an existing sign, click on <b>VIEW/EDIT SIGN</b> in the drop-down menu.
         Scroll through the list of signs to find the one you want to edit.
         Pressing <b>DELETE</b> will permanently delete the selected sign.
         Pressing <b>EDIT</b> will open the sign in edit mode.

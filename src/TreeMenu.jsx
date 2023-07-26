@@ -3,7 +3,7 @@ import AppContext from './context';
 import {
   Accordion,
   AccordionDetails,
-  AccordionSummary, Box, Grid,
+  AccordionSummary, Grid,
   Link,
   Typography
 } from '@mui/material';
@@ -22,23 +22,23 @@ const TreeMenu = () => {
   const loggedIn = Boolean(token);
 
   const menuItems = [
-    { title: 'HOME', visible: true, path: '/', external: false },
+    { title: 'HOME', visible: !loggedIn, path: '/', external: false },
     { title: 'PORTAL HOME', visible: loggedIn, path: '/gatehouse', external: false },
     { title: 'ADD ADMIN', visible: loggedIn, dataCy: 'add-new-user', path: '/add-new-user', external: false },
     { title: 'ACCOUNT', visible: loggedIn, dataCy: 'change-password', path: '/change-password', external: false },
-    { title: 'QR CODE LOCATIONS', visible: true, dataCy: '', path: '/list-of-signs', external: false },
+    { title: 'QR CODE LOCATIONS', visible: !loggedIn, dataCy: '', path: '/list-of-signs', external: false },
     { title: 'ADD SIGN', visible: loggedIn, dataCy: 'add-sign', path: '/add-sign', external: false},
-    { title: 'EDIT SIGNS', visible: loggedIn, dataCy: 'edit-sign', path: '/view-signs', external: false},
+    { title: 'VIEW/EDIT SIGNS', visible: loggedIn, dataCy: 'edit-sign', path: '/view-signs', external: false},
     {
       title: 'THE YORKSHIRE ARBORETUM',
-      visible: true,
+      visible: !loggedIn,
       dataCy: '',
       path: 'https://www.yorkshirearboretum.org/',
       external: true
     },
     {
       title: 'EVENTS CALENDAR',
-      visible: true,
+      visible: !loggedIn,
       dataCy: '',
       path: 'https://www.yorkshirearboretum.org/events',
       external: true
