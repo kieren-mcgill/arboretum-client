@@ -16,7 +16,6 @@ const ListOfSigns = () => {
       <Typography>There are no signs to show currently.</Typography>
     )
   }
-
   return (
     <Container>
       {signs.map((sign, i) => (

@@ -1,13 +1,18 @@
-import { Typography, useMediaQuery, useTheme } from "@mui/material";
+import { Typography } from "@mui/material";
 import Image from "mui-image";
 
 import scanningCodeImage from './img/scanning-code.png'
+import { css } from "@emotion/css";
 
 const Home = () => {
-  const theme = useTheme();
-  const isDesktop = useMediaQuery(theme.breakpoints.up('sm'))
+
+  const containerStyle = css`
+    max-width: 400px;
+    margin: auto;
+  `;
+
   return (
-    <>
+    <div className={containerStyle}>
       <Typography variant='h4' align="center">QR Code Trail</Typography>
       <Typography mb={3} mt={1}>
         As you walk around the Yorkshire Arboretum you will see QR codes on trees or other points of interest.
@@ -25,9 +30,9 @@ const Home = () => {
 
       <Image
         src={scanningCodeImage}
-        style={{ width: isDesktop ? "40%" : "90%", height: 'auto', paddingTop: '2rem' }}
+        style={{ width: "90%", height: 'auto', paddingTop: '2rem' }}
       />
-    </>
+    </div>
   );
 };
 

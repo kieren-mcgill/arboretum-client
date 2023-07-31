@@ -26,7 +26,7 @@ const TreeMenu = () => {
     { title: 'PORTAL HOME', visible: loggedIn, path: '/gatehouse', external: false },
     { title: 'ADD ADMIN', visible: loggedIn, dataCy: 'add-new-user', path: '/add-new-user', external: false },
     { title: 'ACCOUNT', visible: loggedIn, dataCy: 'change-password', path: '/change-password', external: false },
-    { title: 'QR CODE LOCATIONS', visible: !loggedIn, dataCy: '', path: '/list-of-signs', external: false },
+    { title: 'QR CODE LOCATIONS', visible: true, dataCy: '', path: '/map-of-signs', external: false },
     { title: 'ADD SIGN', visible: loggedIn, dataCy: 'add-sign', path: '/add-sign', external: false},
     { title: 'VIEW/EDIT SIGNS', visible: loggedIn, dataCy: 'edit-sign', path: '/view-signs', external: false},
     {

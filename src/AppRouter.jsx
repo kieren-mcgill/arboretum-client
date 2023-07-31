@@ -7,11 +7,11 @@ import AppContext from "./context";
 import Sign from "./Sign";
 import Signup from "./Signup";
 import ChangePassword from "./ChangePassword";
-import ListOfSigns from "./ListOfSigns";
 import SignForm from "./SignForm";
 import EditSign from "./EditSign";
 import ViewSigns from "./ViewSigns";
 import QrViewer from './QrViewer';
+import AllSignsMap from "./AllSignsMap";
 
 const AppRouter = () => {
 
@@ -24,7 +24,7 @@ const AppRouter = () => {
       <Route path="/signs/:id" element={<Sign/>}/>
       <Route path="/add-new-user" element={token ? <Signup/> : <Login/>}/>
       <Route path="/change-password" element={token ? <ChangePassword/> : <Login/>}/>
-      <Route path="/list-of-signs" element={<ListOfSigns/>}/>
+      <Route path="/map-of-signs" element={<AllSignsMap/>}/>
       <Route path="/add-sign" element={token ? <SignForm/> : <Login/>}/>
       <Route path="/edit-sign/:id" element={token ? <EditSign/> : <Login/>}/>
       <Route path="/view-signs" element={token ? <ViewSigns/> : <Login/>}/>

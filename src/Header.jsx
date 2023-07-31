@@ -22,7 +22,7 @@ const Header = () => {
           <Grid item>
             <Grid alignItems="center" container>
               <Grid item m={2} flexGrow={1}>
-                <Typography>{`You are logged in as ${user}`}</Typography>
+                <Typography>You are logged in as <strong>{user}</strong></Typography>
               </Grid>
               <Grid item m={2}>
                 <Button data-cy="logout-button" variant="contained" onClick={() => logout()}>Log Out</Button>
